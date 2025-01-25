@@ -32,7 +32,7 @@ h2 {
     font-size: 2rem;
     background-color: var(--primary-color);
     mix-blend-mode: screen;
-    /* color: black; */
+    
 }
 
 .hero p {
@@ -44,14 +44,15 @@ h2 {
 
 article {
     display: block;
-    width: 850px;
+    width: 60%;
+    height: auto;
     text-align: left;
     position: absolute;
     left: 18%;
     top: 200px;
     background: var(--accent2-color);
     opacity: 0.75;
-    padding: 2em;
+    padding: 1em 2em;
     
     
 }
@@ -62,12 +63,20 @@ article {
     float: right;   
 }
 
+section h2 {
+    clear: both;
+}
 
+footer {
+    text-align: center;
+}
 
 .sociallinks a {
     text-decoration: none;
+    
 }
 
 .sociallinks a img {
     width: 50px;
+    
 }

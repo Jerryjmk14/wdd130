@@ -60,7 +60,7 @@ header, footer, .grid {
 
 .grid {
     display: grid;
-    align-items: center;
+    /* align-items: center; */
 }
 
 main {

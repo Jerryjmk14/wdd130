@@ -1,0 +1,8 @@
+{
+  "auto-close-tag.enableAutoCloseSelfClosingTag": false,
+  "auto-close-tag.insertSpaceBeforeSelfClosingTag": false,
+  "editor.autoClosingOvertype": false,
+  "javascript.autoClosingTags": true,
+  "html.autoClosingTags": false,
+  "html.format.enable": false
+}

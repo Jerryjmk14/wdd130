@@ -61,7 +61,7 @@ h2 {
 .hero-title h1 {
     font-family: "IBM Plex Serif";
     font-size: 2rem;
-    color: white;
+    color: black;
     font-weight: 800;
 }
 
@@ -136,10 +136,119 @@ section h2 {
     
 }
 
+/* styles for contact page */
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 3fr;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-details a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    width: 150px;
+}
+
+.map iframe {
+    border: none;
+    margin-left: 2rem;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    color: black;
+    display: grid;
+}
+
+form h2 {
+    text-align: center;
+}
+
+fieldset {
+    display: grid;
+    gap: 1rem;
+    padding: .5em;
+    margin: 1rem;
+    border: 1px solid grey;
+
+}
+
+legend {
+    padding: .5rem;
+    color: var(--accent1-color);
+    font-size: 1.5rem;
+}
+
+label, input, button, select, textarea {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.purpose, .message {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    
+}
+
+.fullname input {
+    width: 70%;
+}
+
+.email input {
+    width: 75%;
+}
+
+.message textarea {
+    height: 150px;
+}
+
+button {
+    margin: 0 auto;
+    width: 80%;
+    color: black;
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+button:hover {
+    background-color: green;
+    color: black;
+}
+/* Footer */
 footer {
     display: grid;
     grid-template-columns: 3fr 1fr;
     border-top: 1px solid black;
+    margin-top: 1rem;
     
 }
 

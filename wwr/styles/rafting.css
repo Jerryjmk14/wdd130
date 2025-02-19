@@ -39,17 +39,19 @@ nav a:hover {
     width: 120px;
 }
 
+
 h2 {
     color: var(--accent1-color);
     clear: both;
 }
 
-.hero {
+.hero, .home-hero {
     position: relative;
     width: 100%;
+    
 }
 
-.hero img {
+.home-hero img, .hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -62,6 +64,19 @@ h2 {
     top: 40px;
     background-color: var(--secondary-color);
     opacity: 0.8;
+}
+
+.home-hero-title {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    background-color: black;
+    opacity: 0.75;
+    font-family: "IBM Plex Serif";
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 800;
 }
 
 .hero-title h1 {
@@ -87,9 +102,7 @@ article {
     top: 200px;
     background: var(--accent2-color);
     opacity: 0.8;
-    padding: 1em 2em;
-    
-    
+    padding: 1em 2em; 
 }
 
 .hero article p {
@@ -108,6 +121,87 @@ article {
     grid-template-columns: 3fr 1fr 1fr 3fr;
     align-items: center;
     padding: 1rem;
+}
+
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.services img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #81969C;
+}
+
+.call-to-action img {
+    /* width: 100%; */
+    border: 2px solid var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #81969C;
+    grid-column: 1/3;
+}
+
+.call-to-action {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+}
+
+.call-to-action figure {
+    position: relative;
+}
+
+.call-to-action figcaption {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    background-color: var(--accent1-color);
+    padding: 8px;
+    border-radius: 15px;
+    top: 330px;
+    left: 50px;
+
+}
+
+figure .btn-join-us {
+    position: absolute;
+    width: 30%;
+    top: 330px;
+    left: 380px;
+    background: rgb(84, 182, 228);
+}
+
+.call-to-action form {
+    width: 400px;
+    height: 350px;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.call-to-action .fullname input {
+    width: 90%;
+}
+
+.call-to-action .email input {
+    width: 90%;
 }
 
 .history-section img {
@@ -130,7 +224,6 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0.5rem;
-    /* padding: 0 0.5rem; */
 }
 
 .adventure h2 {
@@ -182,13 +275,14 @@ form {
     background-color: #EEEEEE;
     color: black;
     display: grid;
+    
 }
 
 form h2 {
     text-align: center;
 }
 
-fieldset {
+.call-to-action fieldset, fieldset {
     display: grid;
     gap: 1rem;
     padding: .5em;
@@ -248,6 +342,7 @@ button {
 button:hover {
     background-color: green;
     color: black;
+    cursor: pointer;
 }
 /* Footer */
 footer {

@@ -156,6 +156,7 @@ article {
     align-items: center;
     margin-top: 2rem;
     background-color: var(--primary-color);
+    position: relative;
 }
 
 .call-to-action figure {
@@ -175,10 +176,10 @@ article {
 
 }
 
-figure .btn-join-us {
+.trips-action .btn-join-us {
     position: absolute;
-    width: 30%;
-    top: 330px;
+    width: 15%;
+    top: 345px;
     left: 380px;
     background: rgb(84, 182, 228);
 }
@@ -339,7 +340,7 @@ button {
     font-weight: 800;
 }
 
-button:hover {
+button:hover, .trips-action .btn-join-us:hover {
     background-color: green;
     color: black;
     cursor: pointer;

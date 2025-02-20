@@ -362,6 +362,110 @@ button:hover {
     text-decoration: none;
 }
 
+/* Trips page styles */
+.get-in-touch {
+    background-color: var(--accent1-color);
+    color: white;
+    width: 300px;
+    height: 120px;
+    margin: 0.5rem auto;
+    text-align: center;
+    font-weight: 700;
+    padding: .5rem;
+    border: 2px solid var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #81969C;
+}
+
+
+.get-in-touch span {
+    /* border: 1px solid black; */
+    padding: .5rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.get-in-touch span:hover {
+    background-color: green;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.get-in-touch a {
+    text-decoration: none;
+    color: black;
+}
+
+.trips-description img {
+    width: 100%;
+    border: 2px solid var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #81969C;
+    margin-bottom: .5rem;
+}
+
+.trips-description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: 2rem auto;
+    width: 70%;
+    padding: 0;
+    
+}
+
+.camping-description {
+    grid-column: 1/2;
+    
+}
+
+.adventure-description {
+    grid-column: 2/3;
+    grid-row: span 3;
+}
+
+.rapids-description {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+/* Trips Table styles */
+table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead {
+    background-color: rgb(228 240 245);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+
 
 /* Footer */
 footer {
